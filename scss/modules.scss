@@ -1,0 +1,21 @@
+
+
+
+.footer_info{
+	@include grid-row();
+	&_copyw{
+		@include grid-column(12, $float:left);
+		p{
+			text-align: center;
+		}
+		@media only screen and (min-width: 850px) { 
+			@include grid-column(5, $center:true);
+		}
+	}
+	&_social{
+		@include grid-column(12, $float:left);
+		@media only screen and (min-width: 850px) { 
+			@include grid-column(5, $center:true);
+		}
+	}
+}

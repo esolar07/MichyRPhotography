@@ -15,7 +15,7 @@ header{
 	&-nav{
 		@include grid-column(12, $float:right);
 		@media only screen and (min-width: 850px) { 
-			@include grid-column(9);
+			@include grid-column(9, $float:right);
 		}
 		&-ul{
 			@include grid-column(12, $float:right);
@@ -44,9 +44,22 @@ header{
 .l-body{
 	@include grid-row();
 	&-p1{
-		@include grid-column(6, $center:true);
+		@include grid-column(10, $center:true);
+		margin-top: 50px;
+		@media only screen and (min-width: 850px) { 
+			@include grid-column(6, $float:left);
+		}
 	}
 	&-p2{
-		@include grid-column(6, $center:true);
+		@include grid-column(10, $center:true);
+		margin-top: 30px;
+		@media only screen and (min-width: 850px) { 
+			@include grid-column(6, $float:left);
+			margin-top: 50px;
+		}
 	}
+}
+
+.l-footer{
+	width:100%;
 }
