@@ -1,21 +1,34 @@
 
+.l-head-nav-ul-button{
+	background:$pink;
+	&:hover{
+		background: $pinkTint;
+	}
+}
 
+.autoplay{
+	width:70%;
+    margin:50px auto;
+    img{
+    	padding:10px;
+    }
+}
 
 .footer_info{
 	@include grid-row();
 	&_copyw{
-		@include grid-column(12, $float:left);
+		@include grid-column(6, $center:true);
 		p{
 			text-align: center;
 		}
 		@media only screen and (min-width: 850px) { 
-			@include grid-column(5, $center:true);
+			@include grid-column(4, $center:true);
 		}
 	}
 	&_social{
-		@include grid-column(12, $float:left);
+		@include grid-column(3, $center:true);
 		@media only screen and (min-width: 850px) { 
-			@include grid-column(5, $center:true);
+			@include grid-column(3, $center:true);
 		}
 	}
 }

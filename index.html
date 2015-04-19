@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MichyRPhotography</title>
+    <link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
   </head>
   <body>
 
@@ -28,11 +30,8 @@
       </div>
     </header>
     <div id="root">
-      <section class="l-background">
-        
-      </section>
-      
-      <section id="root_footer">
+      <section class="l-background"></section>
+      <section  class="l-info" id="root_footer">
         <div class="l-body">
           <div class="l-body-p1">
             <p>Welcome to Michy R. Photography, a South Florida based photographer specializing in commercial work and people photography such as family photography, children photography, baby photography, maternity photography and any event. Experience a fun, relaxed and professional experience with Michy , who will bring the very best in you and your family.</p>
@@ -45,8 +44,21 @@
             <p><a href="michyr.photography@gmail.com">MichyR.Photography@gmail.com</a></p>
           </div>
           <hr>
+          <!-- Image Carousel -->
+          <div class="autoplay">
+            <div><img src="img/image1.jpg"/></div>
+            <div><img src="img/image2.jpg"/></div>
+            <div><img src="img/image3.jpg"/></div>
+            <div><img src="img/image4.jpg"/></div>
+            <div><img src="img/image5.jpg"/></div>
+            <div><img src="img/image6.jpg"/></div>
+            <div><img src="img/image7.jpg"/></div>
+            <div><img src="img/image8.jpg"/></div>
+          </div>
+          <!-- Image Carousel Ends -->
         </div>
       </section>
+      <section class="l-background"></section>
     </div>
     <footer  class="l-footer" id="footer">
       <div class="footer_info">
@@ -61,6 +73,7 @@
     </footer>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

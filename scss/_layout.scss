@@ -1,7 +1,5 @@
 header{
 	width: 100%;
-	box-shadow:0 10px 50px #FFFAFA;
-	z-index: 999;
 }
 
 .l-head{
@@ -40,6 +38,7 @@ header{
     background-size: cover;
     background-image:url("../img/lrg_1.jpg");
 }
+
 
 .l-body{
 	@include grid-row();
