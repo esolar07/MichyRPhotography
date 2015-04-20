@@ -1,8 +1,13 @@
 
 .l-head-nav-ul-button{
+	@include button();
+
 	background:$pink;
+	color:black;
+	font-size: 1em; // 16px
 	&:hover{
 		background: $pinkTint;
+		color:black;
 	}
 }
 
@@ -16,19 +21,24 @@
 
 .footer_info{
 	@include grid-row();
+	padding:20px;
 	&_copyw{
-		@include grid-column(6, $center:true);
+		@include grid-column(12, $center:true);
 		p{
 			text-align: center;
 		}
 		@media only screen and (min-width: 850px) { 
-			@include grid-column(4, $center:true);
+			@include grid-column(12, $center:true);
 		}
 	}
 	&_social{
-		@include grid-column(3, $center:true);
+		background: red;
+		@include grid-column(12, $center:true);
+		&_img{
+			margin: 0 auto;
+		}
 		@media only screen and (min-width: 850px) { 
-			@include grid-column(3, $center:true);
+			@include grid-column(12, $center:true);
 		}
 	}
 }

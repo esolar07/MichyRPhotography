@@ -1,6 +1,6 @@
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
-    //Foundation Initializer
+//Foundation Initializer
 $(document).foundation();
   
     // Slick Initializer

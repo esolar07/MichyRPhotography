@@ -1,4 +1,5 @@
 
 $font: 'Comfortaa', cursive;
-$pink: #FFCCFF;
-$pinkTint: shade($pink, 80%); 
+$pink: #FFAAFF;
+
+$pinkTint: tint($pink, 30%); 
