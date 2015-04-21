@@ -27,10 +27,14 @@
 }
 
 .bookBox{
-	@include panel();
-	@include grid-column(12, $center:true);
-	background: rgba(255,255,255, 0.3);
+	@include grid-row();
 	z-index: 999;
+	&-txt{
+		@include grid-column(10, $center:true);
+		@include panel();
+		margin-top: 150px;
+		background: rgba(255,255,255, 0.3);
+	}
 }
 
 .footer_info{

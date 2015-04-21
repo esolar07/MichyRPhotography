@@ -2,7 +2,16 @@
 // Documentation can be found at: http://foundation.zurb.com/docs
 //Foundation Initializer
 $(document).foundation();
-  
+
+  $("#alert").on("click", function(){
+     // Sweet Alert function
+    swal({
+      title: "",   
+      text: "You will prompted to Smugmug.com in 4 seconds.",   
+      timer: 4000,   
+      showConfirmButton: false 
+    });
+  });
     // Slick Initializer
  $(document).ready(function(){
     $('.autoplay').slick({
