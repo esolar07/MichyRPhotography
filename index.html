@@ -20,15 +20,42 @@
         </div>
         <div class="l-head-nav">
           <ul class="l-head-nav-ul">
-            <li><a href="index.html" class="l-head-nav-ul-button">Home</a></li>
-            <li><a href="about.html" class="l-head-nav-ul-button">About Michy</a></li>
+            <li><a href="index.html" class="ul-button">Home</a></li>
+            <li><a href="about.html" class="ul-button">About Michy</a></li>
             <!-- gallery button is temporarily leading to smug mug account -->
-            <li><a href="http://michyr.smugmug.com/" target="_blank" class="l-head-nav-ul-button">Gallery</a></li>
-            <li><a href="#contact" class="l-head-nav-ul-button">Contact</a></li>
+            <li><a href="http://michyr.smugmug.com/" target="_blank" class="ul-button">Gallery</a></li>
+            <li><a href="#contact" class="ul-button" data-reveal-id="formModal">Contact</a></li>
           </ul>
         </div>
       </div>
     </header>
+    
+      <!-- Form Modal -->
+      <div id="formModal" class="reveal-modal tiny" data-reveal>
+        <h3 id="hide1">Book your session</h3>
+        <a href="#" class="close-reveal-modal">&#215;</a>
+        <form class="custom" id="hide2">
+          <fieldset>
+             <span class="cspan">Please Enter Full Name</span>
+            <input type="text" placeholder="Name" name="cus_name" id='fullname'>
+            <br>
+            <span>Please Enter Phone Number</span>
+            <input type="tel" placeholder="Phone" name="cus_phone" id="phone">
+            <br>
+            <span>Please Enter Email</span>
+            <input type="email" placeholder="Email" name="cus_email" id="email">
+            <br>
+            <span>Comments</span>
+            <textarea class="left" rows='10' cols='10' id='text' name='text' ></textarea>
+            <br>
+            <button type="button" onclick="sendAJAX()" class="ul-button">Book</button>
+          </fieldset>
+        </form>
+        <div id="ajax">
+        </div>
+      </div>
+      <!-- End Form Modal -->
+
     <div id="root">
       <section class="l-background"></section>
       <section  class="l-info" id="root_footer">
@@ -41,7 +68,7 @@
             <p>I am currently taking bookings for maternity, newborns, children / families, senior portraits. I would love to hear more about you and how I can capture your day in a  way that is unique to you and your family.</p>
                 
             <p>Thank you for visiting Michy R Photography and taking time to get in touch. Any inquiries please email: </p>
-            <p><a href="michyr.photography@gmail.com">MichyR.Photography@gmail.com</a></p>
+            <p class="emaillink"><a href="michyr.photography@gmail.com">MichyR.Photography@gmail.com</a></p>
           </div>
           <hr>
           <!-- Image Carousel -->

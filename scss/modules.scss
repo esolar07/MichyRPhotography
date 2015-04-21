@@ -1,12 +1,19 @@
 
-.l-head-nav-ul-button{
+.ul-button{
 	@include button();
-
 	background:$pink;
 	color:black;
 	font-size: 1em; // 16px
 	&:hover{
 		background: $pinkTint;
+		color:black;
+	}
+	&:visited {
+    	background:$pink;
+		color:black;
+	}
+	&:active{
+		background:$pink;
 		color:black;
 	}
 }
@@ -17,6 +24,13 @@
     img{
     	padding:10px;
     }
+}
+
+.bookBox{
+	@include panel();
+	@include grid-column(12, $center:true);
+	background: rgba(255,255,255, 0.3);
+	z-index: 999;
 }
 
 .footer_info{
@@ -32,7 +46,7 @@
 		}
 	}
 	&_social{
-		background: red;
+		text-align: center;
 		@include grid-column(12, $center:true);
 		&_img{
 			margin: 0 auto;

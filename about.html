@@ -20,18 +20,62 @@
         </div>
         <div class="l-head-nav">
           <ul class="l-head-nav-ul">
-            <li><a href="index.html" class="l-head-nav-ul-button">Home</a></li>
-            <li><a href="about.html" class="l-head-nav-ul-button">About Michy</a></li>
+            <li><a href="index.html" class="ul-button">Home</a></li>
+            <li><a href="about.html" class="ul-button">About Michy</a></li>
             <!-- gallery button is temporarily leading to smug mug account -->
-            <li><a href="http://michyr.smugmug.com/" target="_blank" class="l-head-nav-ul-button">Gallery</a></li>
-            <li><a href="#contact" class="l-head-nav-ul-button">Contact</a></li>
+            <li><a href="http://michyr.smugmug.com/" target="_blank" class="ul-button">Gallery</a></li>
+            <li><a href="#contact" class="ul-button" data-reveal-id="formModal">Contact</a></li>
           </ul>
         </div>
       </div>
     </header>
+
+    <!-- Form Modal -->
+      <div id="formModal" class="reveal-modal tiny" data-reveal>
+        <h3 id="hide1">Book your session</h3>
+        <a href="#" class="close-reveal-modal">&#215;</a>
+        <form class="custom" id="hide2">
+          <fieldset>
+             <span class="cspan">Please Enter Full Name</span>
+            <input type="text" placeholder="Name" name="cus_name" id='fullname'>
+            <br>
+            <span>Please Enter Phone Number</span>
+            <input type="tel" placeholder="Phone" name="cus_phone" id="phone">
+            <br>
+            <span>Please Enter Email</span>
+            <input type="email" placeholder="Email" name="cus_email" id="email">
+            <br>
+            <span>Comments</span>
+            <textarea class="left" rows='10' cols='10' id='text' name='text' ></textarea>
+            <br>
+            <button type="button" onclick="sendAJAX()" class="small button radius">Book</button>
+          </fieldset>
+        </form>
+        <div id="ajax">
+        </div>
+      </div>
+      <!-- End Form Modal -->
     
     <div id="root">
-      <section class="l-background"></section>
+      <section class="l-background">
+        <!-- Contact Message and Button -->
+        <div class="bookBox">
+          <div>
+            <div>
+              <h4>Book your session!</h4>
+                <div>
+                <div>
+                  <p>I would love to hear from you! Please fill out the form to book a session or email regarding any questions you may have.</p>
+                </div>
+                <div>
+                  <a href="#" class="ul-button" data-reveal-id="formModal">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Message and Button Ends -->
+      </section>
       <section class="l-body">
         <div class="l-body-p1">
           <img src="img/about.jpg"/>

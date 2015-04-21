@@ -34,3 +34,21 @@ $(document).foundation();
         ]
     });
  });
+
+
+ // form submission reponse
+    var xhr = new XMLHttpRequest();
+      
+    xhr.open('POST', '/formconfirm.php');
+      
+    xhr.onreadystatechange = function(){
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        document.getElementById("ajax").innerHTML = xhr.responseText;
+      }
+    };
+      
+    function sendAJAX(){
+      xhr.send();
+      document.getElementById('hide1').style.display = "none";
+      document.getElementById('hide2').style.display = "none";
+    }
