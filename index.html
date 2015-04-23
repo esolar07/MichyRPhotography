@@ -10,61 +10,58 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
   </head>
   <body>
-
     <header>
       <div class="l-head">
-        <div class="l-head-logo">
+        <div class="logo">
           <h1>
             <img src="img/MRblacklong.png"/>
           </h1>
         </div>
-        <div class="l-head-nav">
-          <ul class="l-head-nav-ul">
-            <li><a href="index.html" class="ul-button">Home</a></li>
-            <li><a href="about.html" class="ul-button">About Michy</a></li>
+        <div class="main-nav">
+          <ul class="main-nav-ul">
+            <li><a href="index.html" class="nav-btn">Home</a></li>
+            <li><a href="about.html" class="nav-btn">About Michy</a></li>
             <!-- gallery button is temporarily leading to smug mug account -->
-            <li id="alert"><a href="http://michyr.smugmug.com/" target="_blank" class="ul-button">Gallery</a></li>
-            <li><a href="#contact" class="ul-button" data-reveal-id="formModal">Contact</a></li>
+            <li id="alert"><a href="http://michyr.smugmug.com/" target="_blank" class="nav-btn">Gallery</a></li>
+            <li><a href="#contact" class="nav-btn" data-reveal-id="formModal">Contact</a></li>
           </ul>
         </div>
       </div>
     </header>
-    
-      <!-- Form Modal -->
-      <div id="formModal" class="reveal-modal tiny" data-reveal>
-        <h3 id="hide1">Book your session</h3>
-        <a href="#" class="close-reveal-modal">&#215;</a>
-        <form class="custom" id="hide2">
-          <fieldset>
-             <span class="cspan">Please Enter Full Name</span>
-            <input type="text" placeholder="Name" name="cus_name" id='fullname'>
-            <br>
-            <span>Please Enter Phone Number</span>
-            <input type="tel" placeholder="Phone" name="cus_phone" id="phone">
-            <br>
-            <span>Please Enter Email</span>
-            <input type="email" placeholder="Email" name="cus_email" id="email">
-            <br>
-            <span>Comments</span>
-            <textarea class="left" rows='10' cols='10' id='text' name='text' ></textarea>
-            <br>
-            <button type="button" onclick="sendAJAX()" class="ul-button">Book</button>
-          </fieldset>
-        </form>
-        <div id="ajax">
-        </div>
+    <!-- Form Modal -->
+    <div id="formModal" class="reveal-modal tiny" data-reveal>
+      <h3 id="hide1">Book your session</h3>
+      <a href="#" class="close-reveal-modal">&#215;</a>
+      <form class="custom" id="hide2">
+        <fieldset>
+           <span class="cspan">Please Enter Full Name</span>
+          <input type="text" placeholder="Name" name="cus_name" id='fullname'>
+          <br>
+          <span>Please Enter Phone Number</span>
+          <input type="tel" placeholder="Phone" name="cus_phone" id="phone">
+          <br>
+          <span>Please Enter Email</span>
+          <input type="email" placeholder="Email" name="cus_email" id="email">
+          <br>
+          <span>Comments</span>
+          <textarea class="left" rows='10' cols='10' id='text' name='text' ></textarea>
+          <br>
+          <button type="button" onclick="sendAJAX()" class="ul-button">Book</button>
+        </fieldset>
+      </form>
+      <div id="ajax">
       </div>
-      <!-- End Form Modal -->
-
+    </div>
+    <!-- End Form Modal -->
     <div id="root">
-      <section class="l-background"></section>
+      <section class="l-background-1"></section>
       <section  class="l-info" id="root_footer">
         <div class="l-body">
-          <div class="l-body-p1">
+          <div class="body-p1">
             <p>Welcome to Michy R. Photography, a South Florida based photographer specializing in commercial work and people photography such as family photography, children photography, baby photography, maternity photography and any event. Experience a fun, relaxed and professional experience with Michy , who will bring the very best in you and your family.</p>
             <p>If you are looking for the someone you can trust to stop time through a camera and keep that special moment for a lifetime or for great photos of your next event, for Michy for a consultation</p>
           </div>
-          <div class="l-body-p2">
+          <div class="body-p2">
             <p>I am currently taking bookings for maternity, newborns, children / families, senior portraits. I would love to hear more about you and how I can capture your day in a  way that is unique to you and your family.</p>
                 
             <p>Thank you for visiting Michy R Photography and taking time to get in touch. Any inquiries please email: </p>
@@ -83,9 +80,10 @@
             <div><img src="img/image8.jpg"/></div>
           </div>
           <!-- Image Carousel Ends -->
+          <hr>
         </div>
       </section>
-      <section class="l-background"></section>
+      <section class="l-background-2"></section>
     </div>
     <footer  class="l-footer" id="footer">
       <div class="footer_info">
@@ -94,8 +92,8 @@
         </div>
         <div class="footer_info_social"> 
           <div class="footer_info_social_img">   
-          <a href="http://instagram.com/michyrphotography"><img align="center" src="img/insta.png" height="42" width="42"></a>
-          <a href="https://www.facebook.com/Michy0016"><img align="center" src="img/fb.png" height="42" width="42"></a>
+          <a href="http://instagram.com/michyrphotography" target="_blank"><img align="center" src="img/insta.png" height="42" width="42"></a>
+          <a href="https://www.facebook.com/MichyRPhotography?fref=ts" target="_blank"><img align="center" src="img/fb.png" height="42" width="42"></a>
          </div>
         </div>  
       </div>

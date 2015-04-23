@@ -5,60 +5,28 @@ header{
 .l-head{
 	@include grid-row();
 	padding-bottom:25px;
-	&-logo{
-		@include grid-column(12, $center:true);
-		@media only screen and (min-width: 850px) { 
-			@include grid-column(4, $float:left);
-		}
-	}
-	&-nav{
-		@include grid-column(12, $float:right);
-		@media only screen and (min-width: 850px) { 
-			@include grid-column(7, $float:right);
-		}
-		&-ul{
-			@include grid-column(12, $float:right);
-			@include inline-block-list();
-			@include button-group-container();
-			li{
-				@include button-group-style();
-			}
-		}
-	}
 }
 
 .l-background{
-	height: 600px;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-image:url("../img/lrg_1.jpg");
+	&-1{
+		@include parallax("../img/lrg_5.jpg");
+	}
+	&-2{
+		@include parallax("../img/lrg_2.jpg");
+	}
+	&-3{
+		@include parallax("../img/lrg_3.jpg");
+	}
+	&-4{
+		@include parallax("../img/lrg_6.jpg");
+	}
 }
+
+
 
 
 .l-body{
 	@include grid-row();
-	&-p1{
-		@include grid-column(10, $center:true);
-		margin-top: 50px;
-		img{
-			-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  			-moz-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  			clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-		}
-		@media only screen and (min-width: 850px) { 
-			@include grid-column(6, $float:left);
-		}
-	}
-	&-p2{
-		@include grid-column(10, $center:true);
-		margin-top: 30px;
-		@media only screen and (min-width: 850px) { 
-			@include grid-column(6, $float:left);
-			margin-top: 50px;
-		}
-	}
 }
 
 .l-footer{

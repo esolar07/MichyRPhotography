@@ -10,54 +10,51 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
   </head>
   <body>
-
     <header>
       <div class="l-head">
-        <div class="l-head-logo">
+        <div class="logo">
           <h1>
             <img src="img/MRblacklong.png"/>
           </h1>
         </div>
-        <div class="l-head-nav">
-          <ul class="l-head-nav-ul">
-            <li><a href="index.html" class="ul-button">Home</a></li>
-            <li><a href="about.html" class="ul-button">About Michy</a></li>
+        <div class="main-nav">
+          <ul class="main-nav-ul">
+            <li><a href="index.html" class="nav-btn">Home</a></li>
+            <li><a href="about.html" class="nav-btn">About Michy</a></li>
             <!-- gallery button is temporarily leading to smug mug account -->
-            <li><a href="http://michyr.smugmug.com/" target="_blank" class="ul-button">Gallery</a></li>
-            <li><a href="#contact" class="ul-button" data-reveal-id="formModal">Contact</a></li>
+            <li id="alert"><a href="http://michyr.smugmug.com/" target="_blank" class="nav-btn">Gallery</a></li>
+            <li><a href="#contact" class="nav-btn" data-reveal-id="formModal">Contact</a></li>
           </ul>
         </div>
       </div>
     </header>
-
     <!-- Form Modal -->
-      <div id="formModal" class="reveal-modal tiny" data-reveal>
-        <h3 id="hide1">Book your session</h3>
-        <a href="#" class="close-reveal-modal">&#215;</a>
-        <form class="custom" id="hide2">
-          <fieldset>
-             <span class="cspan">Please Enter Full Name</span>
-            <input type="text" placeholder="Name" name="cus_name" id='fullname'>
-            <br>
-            <span>Please Enter Phone Number</span>
-            <input type="tel" placeholder="Phone" name="cus_phone" id="phone">
-            <br>
-            <span>Please Enter Email</span>
-            <input type="email" placeholder="Email" name="cus_email" id="email">
-            <br>
-            <span>Comments</span>
-            <textarea class="left" rows='10' cols='10' id='text' name='text' ></textarea>
-            <br>
-            <button type="button" onclick="sendAJAX()" class="small button radius">Book</button>
-          </fieldset>
-        </form>
-        <div id="ajax">
-        </div>
+    <div id="formModal" class="reveal-modal tiny" data-reveal>
+      <h3 id="hide1">Book your session</h3>
+      <a href="#" class="close-reveal-modal">&#215;</a>
+      <form class="custom" id="hide2">
+        <fieldset>
+           <span class="cspan">Please Enter Full Name</span>
+          <input type="text" placeholder="Name" name="cus_name" id='fullname'>
+          <br>
+          <span>Please Enter Phone Number</span>
+          <input type="tel" placeholder="Phone" name="cus_phone" id="phone">
+          <br>
+          <span>Please Enter Email</span>
+          <input type="email" placeholder="Email" name="cus_email" id="email">
+          <br>
+          <span>Comments</span>
+          <textarea class="left" rows='10' cols='10' id='text' name='cus_text' ></textarea>
+          <br>
+          <button type="button" onclick="sendAJAX()" class="small button radius">Book</button>
+        </fieldset>
+      </form>
+      <div id="ajax">
       </div>
-      <!-- End Form Modal -->
-    
+    </div>
+    <!-- End Form Modal -->
     <div id="root">
-      <section class="l-background">
+      <section class="l-background-3">
         <!-- Contact Message and Button -->
         <div class="bookBox">
           <div class="bookBox-txt">
@@ -67,7 +64,7 @@
                 <p>I would love to hear from you! Please fill out the form to book a session or email regarding any questions you may have.</p>
               </div>
               <div>
-                <a href="#" class="ul-button" data-reveal-id="formModal">Book Now</a>
+                <a href="#" class="modal-btn" data-reveal-id="formModal">Book Now</a>
               </div>
             </div>
           </div>
@@ -75,18 +72,18 @@
         <!-- Contact Message and Button Ends -->
       </section>
       <section class="l-body">
-        <div class="l-body-p1">
+        <div class="body-p1">
           <img src="img/about.jpg"/>
         </div>
-        <div class="l-body-p2">
+        <div class="body-p2">
         <h4>About Michy R. Photography</h4><br>
           <p>Michy R. Photography is a professional non-traditional portrait photographer in Miami, Broward Florida specializing in family photography, children photography, baby photography, maternity photography. Michy R. is so blessed to be able to use her artistic background to combine baby portraits, children portraits, and family portraits and create beautiful images to preserve the memories of your portrait sessions and events.</p><br>
           <p>
           If you are looking for a creative and talented family photographer, children photographer, baby photographer and maternity photographer then you have no need to look any further. Michy R photographs in the Dade and Broward areas.</p>
         </div>
       </section>
+      <section class="l-background-4"></section>
     </div>
-
     <footer  class="l-footer" id="footer">
       <div class="footer_info">
         <div class="footer_info_copyw">      
@@ -94,7 +91,7 @@
         </div>
         <div class="footer_info_social">      
           <a href="http://instagram.com/michyrphotography"><img align="center" src="img/insta.png" height="42" width="42"></a>
-          <a href="https://www.facebook.com/Michy0016"><img align="center" src="img/fb.png" height="42" width="42"></a>
+          <a href="https://www.facebook.com/MichyRPhotography?fref=ts"><img align="center" src="img/fb.png" height="42" width="42"></a>
         </div>  
       </div>
     </footer>
