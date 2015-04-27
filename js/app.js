@@ -13,6 +13,7 @@ $(document).foundation();
       showConfirmButton: true 
     });
   });
+
     // Slick Initializer
  $(document).ready(function(){
     $('.autoplay').slick({
@@ -48,7 +49,7 @@ $(document).foundation();
 
  // form submission reponse
     var xhr = new XMLHttpRequest();
-      
+    
     xhr.open('POST', 'formconfirmation.php');
       
     xhr.onreadystatechange = function(){

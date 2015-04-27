@@ -16,10 +16,11 @@ li{
 	@include no-bullets;
 }
 
+header{
+	width: 100%;
+}
+
 section{
 	width:100%;
 }
 
-button{
-	background: $pinkTint;
-}

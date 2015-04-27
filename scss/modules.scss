@@ -2,46 +2,49 @@
 .logo{
 	@include grid-column(12, $center:true);
 	@media only screen and (min-width: 850px) { 
-		@include grid-column(4, $float:left);
+		@include grid-column(7, $center:true);
+
 	}
 }
 .main-nav{
-	@include grid-column(12, $float:right);
-	@media only screen and (min-width: 850px) { 
-		@include grid-column(7, $float:right);
-	}
+	@include grid-column(12, $center:true);
+	padding-top:10px;
+	padding-bottom: 10px;
+	border-top: solid 1px $pink;
+	border-bottom: solid 1px $pink;
 	&-ul{
-		@include grid-column(12, $float:right);
+		@include grid-column(12, $center:true);
 		@include inline-block-list();
-		@include button-group-container();
-		li{
-			@include button-group-style();
-		}
+		text-align: center;
 	}
 }
 
 .nav-btn{
-	@include button();
-	background:$pink;
+//	@include button();
+	padding:15px;
+	border-right: solid 1px $pink;
+	border-left: solid 1px $pink;
+	font-size: 0.7em;  
 	color:black;
-	font-size: 1em; // 16px
-	&:hover{
-		background: $pinkTint;
-		color:black;
+	@media only screen and (min-width: 850px) { 
+		font-size: 1em; // 16px
+		padding:20px;
 	}
-	&:visited {
-    	background:$pink;
-		color:black;
-	}
-	&:active{
-		background:$pink;
-		color:black;
-	}
+	@include alinks($pink, black);
+}
+
+.ul-btn{
+	padding: 15px;
+	@include border-radius(10px);
+	background: $pink;
+	color:black;
+	@include alinks($pink2, black);
 }
 
 .body-p1{
-	@include grid-column(10, $center:true);
+	@include grid-column(12, $center:true);
 	margin-top: 50px;
+	font-size: 0.7em; 
 	img{
 		-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 			-moz-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
@@ -49,20 +52,26 @@
 	}
 	@media only screen and (min-width: 850px) { 
 		@include grid-column(6, $float:left);
+		font-size: 1em; 
 	}
 }
 
 .body-p2{
-	@include grid-column(10, $center:true);
+	@include grid-column(12, $center:true);
 	margin-top: 30px;
+	font-size: 0.7em; 
 	@media only screen and (min-width: 850px) { 
 		@include grid-column(6, $float:left);
 		margin-top: 50px;
+		font-size: 1em; 
+	}
+	.emaillink{
+		color: $pink2;
 	}
 }
 
 .autoplay{
-	@include grid-column(10, $center:true);
+	@include grid-column(12, $center:true);
     margin:50px auto;
     img{
     	padding:10px;
@@ -74,13 +83,10 @@
 	z-index: 999;
 	&-txt{
 		@include grid-column(10, $center:true);
-		@include panel();
 		margin-top: 150px;
+		@include panel();
 		background: rgba(255,255,255, 0.7);
 	}
-	.modal-btn{
-	@extend .nav-btn;
-}	
 }
 
 .footer_info{

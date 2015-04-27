@@ -1,10 +1,11 @@
-header{
-	width: 100%;
-}
-
 .l-head{
 	@include grid-row();
-	padding-bottom:25px;
+	padding-bottom:20px;
+}
+
+.backmain{
+	 height: 600px;
+	 width:100%;
 }
 
 .l-background{
@@ -27,6 +28,7 @@ header{
 
 .l-body{
 	@include grid-row();
+	padding:30px;
 }
 
 .l-footer{

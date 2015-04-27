@@ -1,10 +1,13 @@
 
 //variables 
 $font: 'Comfortaa', cursive;
-$pink: #FFAAFF;
+$pink: #F1BBC5;
+$pink2: #FFAAFF;
 $pinkTint: tint($pink, 30%); 
 
 // mixins (functions)
+
+// mixin for parallx background images
 // $img = path to image
 @mixin parallax($img){
 	height: 600px;
@@ -13,4 +16,21 @@ $pinkTint: tint($pink, 30%);
     background-attachment: fixed;
     background-size: cover;
     background-image:url($img);
+}
+
+// mixin for links hover, visitied and active
+@mixin alinks($back, $text){
+
+	&:hover{
+		background: $back;
+		color:$text;
+	}
+	&:visited {
+    	background:$back;
+    	color:$text;
+	}
+	&:active{
+		background:$back;
+		color:$text;
+	}
 }
