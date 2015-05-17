@@ -1,0 +1,114 @@
+
+.logo{
+	@include grid-column(12, $center:true);
+	@media only screen and (min-width: 850px) { 
+		@include grid-column(7, $center:true);
+
+	}
+}
+.main-nav{
+	@include grid-column(12, $center:true);
+	padding-top:10px;
+	padding-bottom: 10px;
+	border-top: solid 1px $pink;
+	border-bottom: solid 1px $pink;
+	&-ul{
+		@include grid-column(12, $center:true);
+		@include inline-block-list();
+		text-align: center;
+	}
+}
+
+.nav-btn{
+//	@include button();
+	padding:15px;
+	border-right: solid 1px $pink;
+	border-left: solid 1px $pink;
+	font-size: 0.7em;  
+	color:black;
+	@media only screen and (min-width: 850px) { 
+		font-size: 1em; // 16px
+		padding:20px;
+	}
+	@include alinks($pink, black);
+}
+
+.ul-btn{
+	padding: 15px;
+	@include border-radius(10px);
+	background: $pink;
+	color:black;
+	@include alinks($pink2, black);
+}
+
+.body-p1{
+	@include grid-column(12, $center:true);
+	margin-top: 50px;
+	font-size: 0.7em; 
+	img{
+		-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+			-moz-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+			clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	}
+	@media only screen and (min-width: 850px) { 
+		@include grid-column(6, $float:left);
+		font-size: 1em; 
+	}
+}
+
+.body-p2{
+	@include grid-column(12, $center:true);
+	margin-top: 30px;
+	font-size: 0.7em; 
+	@media only screen and (min-width: 850px) { 
+		@include grid-column(6, $float:left);
+		margin-top: 50px;
+		font-size: 1em; 
+	}
+	.emaillink{
+		color: $pink2;
+	}
+}
+
+.autoplay{
+	@include grid-column(12, $center:true);
+    margin:50px auto;
+    img{
+    	padding:10px;
+    }
+}
+
+.bookBox{
+	@include grid-row();
+	z-index: 999;
+	&-txt{
+		@include grid-column(10, $center:true);
+		margin-top: 150px;
+		@include panel();
+		background: rgba(255,255,255, 0.7);
+	}
+}
+
+.footer_info{
+	@include grid-row();
+	padding:20px;
+	&_copyw{
+		@include grid-column(12, $center:true);
+		p{
+			text-align: center;
+		}
+		@media only screen and (min-width: 850px) { 
+			@include grid-column(12, $center:true);
+		}
+	}
+	&_social{
+		text-align: center;
+		@include grid-column(12, $center:true);
+		&_img{
+			margin: 0 auto;
+		}
+		@media only screen and (min-width: 850px) { 
+			@include grid-column(12, $center:true);
+		}
+	}
+}
