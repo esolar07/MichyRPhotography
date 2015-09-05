@@ -1,9 +1,9 @@
 
-//variables 
+//variables
 $font: 'Comfortaa', cursive;
 $pink: #F1BBC5;
 $pink2: #FFAAFF;
-$pinkTint: tint($pink, 30%); 
+$pinkTint: tint($pink, 30%);
 
 // mixins (functions)
 
@@ -12,11 +12,14 @@ $pinkTint: tint($pink, 30%);
 @mixin parallax($img){
 	height: 600px;
 	background: url($img);
-    background-position: 50% 50%;
-  	background-repeat: no-repeat;
-  	background-attachment: fixed;
-  	background-size: cover;
-  	z-index: -10;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: -10;
+	@media only screen and (max-width: 850px) {
+		display: none;
+	}
 }
 
  //linear-gradient(#fff, transparent 20%),

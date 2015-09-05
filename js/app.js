@@ -3,17 +3,6 @@
 //Foundation Initializer
 $(document).foundation();
 
-
-
-  $("#alert").on("click", function(){
-     // Sweet Alert function
-    swal({
-      title: "",   
-      text: "You will prompted to Smugmug.com when selecting to view the gallery.",     
-      showConfirmButton: true 
-    });
-  });
-
     // Slick Initializer
  $(document).ready(function(){
     $('.autoplay').slick({
@@ -49,15 +38,15 @@ $(document).foundation();
 
  // form submission reponse
     var xhr = new XMLHttpRequest();
-    
+
     xhr.open('POST', 'formconfirmation.php');
-      
+
     xhr.onreadystatechange = function(){
       if (xhr.readyState === 4 && xhr.status === 200) {
         document.getElementById("ajax").innerHTML = xhr.responseText;
       }
     };
-      
+
     function sendAJAX(){
       xhr.send();
       document.getElementById('hide1').style.display = "none";
