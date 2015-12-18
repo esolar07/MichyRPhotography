@@ -10,16 +10,24 @@
 
 .l-background{
 	&-1{
-		@include parallax("../img/lrg_5.jpg");
+		@media only screen and (min-width: 850px) {
+			@include parallax("../img/lrg_1.jpg");
+		}
 	}
 	&-2{
-		@include parallax("../img/lrg_2.jpg");
+		@media only screen and (min-width: 850px) {
+			@include parallax("../img/lrg_2.jpg");
+		}
 	}
 	&-3{
-		@include parallax("../img/lrg_3.jpg");
+		@media only screen and (min-width: 850px) {
+			@include parallax("../img/lrg_3.jpg");
+		}
 	}
 	&-4{
-		@include parallax("../img/lrg_6.jpg");
+		@media only screen and (min-width: 850px) {
+			@include parallax("../img/lrg_6.jpg");
+		}
 	}
 }
 
