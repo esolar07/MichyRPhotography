@@ -84,8 +84,11 @@
 	&-txt{
 		@include grid-column(10, $center:true);
 		margin-top: 150px;
+		background:rgba($pink, 0.8);
 		@include panel();
-		background: rgba(255,255,255, 0.7);
+		@media only screen and (min-width: 850px) { 
+			background: rgba(255,255,255, 0.7);
+		}
 	}
 }
 
